@@ -3,8 +3,11 @@
  */
 import {combineReducers} from 'redux';
 import AuthReduser from './AuthReducer';
-
+import PetFormReducer from './PetFormReducer';
+import PetReducer from './PetReducer';
 
 export default combineReducers({
-    auth: AuthReduser
+    auth: AuthReduser,
+    petForm: PetFormReducer,
+    pets: PetReducer
 });
